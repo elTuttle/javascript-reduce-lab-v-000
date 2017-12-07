@@ -24,7 +24,7 @@ const totalBatteries = batteryBatches.reduce( function(totalAmount,newAmount){
 console.log(totalBatteries)
 
 const wordCountMap = monologueLines.reduce(function(map, word){
-    console.log(word)
+    word_count = word.split(" ")
     map[word] = (map[word]||0)+1;
     return map;
 }, Object.create(null));
