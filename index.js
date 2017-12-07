@@ -28,4 +28,5 @@ const wordCountMap = monologueLines.map( function(line){
   tempArray = wordArray.reduce( function(){
     return wordArray.length
   }, 0)
+  console.log(tempArray)
 })
