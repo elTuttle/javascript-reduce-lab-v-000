@@ -25,13 +25,12 @@ console.log(totalBatteries)
 
 const wordCountMap = monologueLines.map( function(line){
   var wordArray = line.split(" ");
-  var length_string = wordArray.length.to_s
   var tempInt = wordArray.reduce( function(){
     return wordArray.length
   }, 0)
 
   return Object.assign({},line,{
-    [`${length_string}`]: tempInt
+    [`${tempInt}`]: tempInt
   })
 })
 
