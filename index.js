@@ -31,7 +31,7 @@ const wordCountMap = monologueLines.map( function(line){
   }, 0)
 
   console.log(tempArray)
-  Object.assign({},line,{
+  return Object.assign({},line,{
     length_string: wordArray.length
   })
 })
