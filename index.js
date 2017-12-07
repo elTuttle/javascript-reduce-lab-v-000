@@ -24,9 +24,13 @@ const totalBatteries = batteryBatches.reduce( function(totalAmount,newAmount){
 console.log(totalBatteries)
 
 const wordCountMap = monologueLines.map( function(line){
-  wordArray = line.split(" ");
-  tempArray = wordArray.reduce( function(){
+  var wordArray = line.split(" ");
+  var tempArray = wordArray.reduce( function(){
     return wordArray.length
   }, 0)
+  
   console.log(tempArray)
+  Object.assign({},line,{
+    `${wordArray.length}`:  
+  })
 })
