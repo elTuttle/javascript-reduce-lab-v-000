@@ -35,4 +35,4 @@ const wordCountMap = monologueLines.map( function(line){
   })
 })
 
-//console.log(wordCountMap)
+console.log(wordCountMap)
